@@ -84,7 +84,13 @@ int main() {
         printf("Producto %d - Nombre: ", i + 1);
         scanf(" %[^\n]", nombres[i]); //Leer cadenas con espacios (Si los tiene)
         printf("Producto %d - Precio: ", i + 1);
+        A:
         scanf("%f", &precios[i]);
+        if (precios[i]<=0){
+            printf("Valor Inválido, ingrese denuevo\n");
+            printf("Producto %d - Precio: ", i + 1);
+            goto A;
+        }
     }
     cantidad = n;
 
