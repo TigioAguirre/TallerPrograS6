@@ -140,3 +140,82 @@ int main() {
 
     return 0;
 }
+
+
+public class Juego {
+    /**Atributos de la Clase Juego*/
+    private String nombre;
+    private String categoria;
+    private Double tamanio;
+    private Double precio;
+    private Integer licenciasVendidas;
+    private Integer licenciasDisponibles;
+    /**Constructor*/
+    public Juego(String nombre, String categoria, Double tamanio, Double precio, Integer licenciasVendidas, Integer licenciasDisponibles) {
+        this.nombre = nombre;
+        this.categoria = categoria;
+        this.tamanio = tamanio;
+        this.precio = precio;
+        this.licenciasVendidas = licenciasVendidas;
+        this.licenciasDisponibles = licenciasDisponibles;
+    }
+    /**Metodos*/
+    //Getters
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public Double getTamanio() {
+        return tamanio;
+    }
+
+    public Double getPrecio() {
+        return precio;
+    }
+
+    public Integer getLicenciasVendidas() {
+        return licenciasVendidas;
+    }
+
+    public Integer getLicenciasDisponibles() {
+        return licenciasDisponibles;
+    }
+    //Setters
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
+
+    public void setTamanio(Double tamanio) {
+        this.tamanio = tamanio;
+    }
+
+    public void setPrecio(Double precio) {
+        this.precio = precio;
+    }
+
+    public void setLicenciasVendidas(Integer licenciasVendidas) {
+        this.licenciasVendidas = licenciasVendidas;
+    }
+
+    public void setLicenciasDisponibles(Integer licenciasDisponibles) {
+        this.licenciasDisponibles = licenciasDisponibles;
+    }
+    //Métodos Propios
+
+    public String detalleJuego(){
+        String dJ="";
+
+        return dJ;
+    }
+}
+
